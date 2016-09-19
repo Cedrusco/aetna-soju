@@ -1,0 +1,40 @@
+<md-sidenav class="sidenavItem" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+	<div layout="row">
+		<md-button class="sidenavButton"
+					ng-class="{'sidenavButtonSelected':selectedMenu('/home')}"
+					href = "/home">
+        <img src="images/icon_home.png"></img>
+        <span style="float: left">HOME</span>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button 	class="sidenavButton"
+					ng-class="{'sidenavButtonSelected': selectedMenu('/user_profile')}"
+					href = "/user_profile">
+      <img src="images/icon_account.png"></img>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button 	class="sidenavButton"
+					ng-class="{'sidenavButtonSelected': selectedMenu('/feed')}"
+					href = "/feed">
+          <img src="images/icon_claim.png"></img>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button	class="sidenavButton"
+					ng-class="{'sidenavButtonSelected': selectedMenu('/newsfeed')}"
+					href="/newsfeed">
+      <img src="images/icon_find_doctor.png"></img>
+		</md-button>
+	</div>
+	<span></span>
+	<div layout="row">
+		<md-button class="sidenavButton">
+      <img src="images/icon_appointment.png"></img>
+		</md-button>
+	</div>
+</md-sidenav>
