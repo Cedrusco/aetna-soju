@@ -5,7 +5,7 @@ angular.module('Soju')
 
 	return {
 		features: {
-			'auth': true
+			'auth': false
 		},
 		init: function() {
 

@@ -5,8 +5,8 @@ var app = angular.module('Soju', ['auth0.lock', 'angular-jwt', 'ngRoute', 'ngMat
 app.config(['$routeProvider', '$locationProvider', '$mdThemingProvider', '$httpProvider', 'lockProvider', 'jwtOptionsProvider', function($routeProvider, $locationProvider, $mdThemingProvider, $httpProvider, lockProvider, jwtOptionsProvider) {
 
 	lockProvider.init({
-		clientID: 'XTA0eSpT3Hc4EvTnQKC0tQzLAl3VR89I',
-		domain: 'michaelbbae.auth0.com',
+		clientID: '**clientid**',
+		domain: '**mydomain**.auth0.com',
 		options: {
 			auth: {
 				redirectUrl: location.href + 'home',
